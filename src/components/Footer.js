@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Analyse from "../icons/Analyse.svg";
 import Daily from "../icons/Daily.svg";
 import incentTrack from "../icons/incentTrack.svg";
@@ -99,7 +100,7 @@ function Footer() {
               </div>
             </div>
             <button className="bg-blue-500 py-1  p-6 ppx-16 rounded mt-4 font-bold text-lg mx-auto">
-              Get started
+              <Link to="/signUp"> Get started</Link>
             </button>
           </div>
         </div>
@@ -119,8 +120,13 @@ function Footer() {
           <div className="">
             <h4 className="text-blue-500 text-sm font-normal pb-3"> Company</h4>
             <ul className="text-sm font-normal space-y-2">
-              <li>About us</li>
-              <li>Our Team</li>
+              <li>
+                {" "}
+                <Link to="/about">About </Link>
+              </li>
+              <li>
+                <Link to="/about">Our Team</Link>
+              </li>
             </ul>
           </div>
           <div className="">

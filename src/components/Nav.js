@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../icons/Logo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Nav() {
   const [changeBg, setChangeBg] = useState(false);
   const chandbg = () => {
     console.log(window.scrollY);
   };
   const [open, setopen] = useState(true);
-
+  const navigate = useNavigate();
   const hide = () => {
     setopen(!open);
   };
@@ -61,11 +61,9 @@ function Nav() {
           <li className="">
             <Link to="/features/#pricing"> Princing </Link>
           </li>
-          <button
-            className="bg-white border border-black  p-2 rounded hover:bg-blue-400 hover:text-white hover:border-0"
-            onclick=""
-          >
-            Get started
+
+          <button className="bg-white border border-black  p-2 rounded hover:bg-blue-400 hover:text-white hover:border-0">
+            <Link to="/signUp">Get started</Link>
           </button>
         </ul>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function ForgetPassword() {
   return (
@@ -35,7 +36,7 @@ function ForgetPassword() {
                   </div>
                   <div className=" flex items-center justify-center flex-col divide-y divide-opacity-20 divide-secondary-gray w-full mt-10"></div>
                   <div className="text-center text-sm font-medium mt-4  ">
-                    Go back to homepage
+                    <Link to="/"> Go back to homepage</Link>
                   </div>
                 </div>
               </form>

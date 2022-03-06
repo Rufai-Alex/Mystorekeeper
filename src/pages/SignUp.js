@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -101,8 +102,8 @@ function SignUp() {
                 <div></div>
                 <p className=" text-tetiary-gray text-sm font-medium mt-4 flex items-center justify-center flex-col w-full pt-8">
                   Already have an account?
-                  <div to="/signIn" className="text-primaryYellow block ">
-                    Log in
+                  <div className="text-primaryYellow block ">
+                    <Link to="/login"> Log in</Link>
                   </div>
                 </p>
               </div>

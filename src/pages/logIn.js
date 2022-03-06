@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LogIn() {
   return (
@@ -45,15 +46,17 @@ function LogIn() {
               </div>
               <div className=" flex items-center justify-center flex-col divide-y divide-opacity-20 divide-secondary-gray w-full mt-10">
                 <p className="block  text-blue-500 text-base font-medium pb-2">
-                  Forgot Password?
+                  <Link to="/forget"> Forgot Password?</Link>
                 </p>
                 <p className=" text-tetiary-gray text-sm font-medium mt-4 text-center items-center justify-center flex-col w-full pt-8">
                   Don’t have an account?
-                  <span className="text-blue-500  "> Sign up</span>
+                  <span className="text-blue-500  ">
+                    <Link to="/signUp"> Sign up</Link>
+                  </span>
                 </p>
               </div>
               <div className="text-center text-sm font-medium mt-4  ">
-                Go back to homepage
+                <Link to="/"> Go back to homepage</Link>
               </div>
             </div>
           </form>

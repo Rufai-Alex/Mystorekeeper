@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 import check from "../icons/check.svg";
@@ -23,11 +24,11 @@ function Features() {
               Track expenses, run reports and even more not from just one place
               but any where, any time.
             </p>
-            <div className="flex justify-center">
-              <button className="inline-flex  bggreen text-white border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Buy Now
+            <div className="flex justify-between w-full">
+              <button className="inline-flex  bggreen text-white border-0 py-2 px-2 lg:px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg md:text-base">
+                <Link to={"/signUp"}> Buy Now</Link>
               </button>
-              <button className=" ml-4 md:ml-24 inline-flex  bggreen text-white border-0 py-2  px-2 md:px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+              <button className="mr-12 md:ml-1  lg:mr-24 inline-flex  bggreen text-white border-0 py-2  px-1  lg:px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg md:text-base">
                 Start Free 30 Day Trial
               </button>
             </div>
